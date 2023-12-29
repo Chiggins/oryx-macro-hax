@@ -29,13 +29,13 @@ jobs:
         with:
           path: layout_src/${{ vars.LAYOUT_FOLDER }}
           artifacts_path: ${{ github.workspace }}/artifacts
-          keymap: firmware
-          keyboard: moonlander
+          keymap: chiggins_shine
+          keyboard: ergodox_ez/shine
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           title: "Updated firmware"
           files: |
-            artifacts/moonlander_firmware.bin
+            artifacts/ergodox_ez_shine_default.hex
         
