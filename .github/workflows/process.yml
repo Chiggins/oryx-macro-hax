@@ -37,5 +37,5 @@ jobs:
           automatic_release_tag: "latest"
           title: "Updated firmware"
           files: |
-            artifacts/ergodox_ez_shine_default.hex
+            artifacts/ergodox_ez_shine_chiggins_shine.hex
         
